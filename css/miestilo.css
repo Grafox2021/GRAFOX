@@ -1,0 +1,828 @@
++{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face{
+	font-family: quic;
+	src: url(quicksand-bold.ttf);
+	font-family: adventure;
+	src: url(adventure.otf);
+}
+body{
+	margin: 0;
+	font-family: quic;
+	background-color: #DFE0EB;
+}
+
+/* Seccion menu hambuguesa */
+
+header{
+	width: 100%;
+	background-color: yellow;
+}
+
+#barra-menu{
+	display: none;
+}
+
+header label{
+	display: none;
+}
+
+header label img{
+	display: block;
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	border-right: 1px solid #000;
+}
+
+header label:hover {
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+/* Seccion barra menu */
+
+.logo-menu{
+	height: 90px;
+	padding: 5px;
+	margin: 10px;
+}
+
+.barra-nav{
+	display: flex;
+	justify-content: space-between;
+}
+
+.barra-nav ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.barra-nav li:hover{
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.barra-nav li a{
+	display: block;
+	padding: 15px 20px;
+	color: #000;
+	font-family: quic;
+}
+
+/* Seccion inicio */
+
+#inicio{
+	margin-top: 50px;
+}
+
+.video{
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 50px;
+}
+
+.texto-inicio img{
+	height: 100px;
+	padding: 30px 0px;
+}
+
+.texto-inicio{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 40px;
+}
+
+.boton1 {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  color:#BF0B80;
+}
+
+.boton1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(255, 171, 157, 0.5);
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.boton1 span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.boton1 svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.boton1:hover:before {
+  width: 100%;
+  background: #ffab9d;
+}
+
+.boton1:hover svg {
+  transform: translateX(0);
+}
+
+.boton1:active {
+  transform: scale(0.96);
+}
+
+.slogan{
+	font-family: adventure;
+	display: flex;
+	justify-content: center;
+	margin: 40px 0px;
+}
+
+.b-c{
+	display: flex;
+	justify-content: center;
+	margin: 40px 0px;
+}
+
+.beneficios-contras{
+	width: 80%;
+	background-color: #010080;
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+}
+
+.titulo{
+	font-family: adventure;
+	color: yellow;
+	font-size: 45px;
+	display: flex;
+	justify-content: center;
+}
+
+.parrafo1{
+	color: white;
+	font-size: 20px;
+	font-family: quic;
+}
+
+.lata{
+	padding: 10px;
+}
+
+/* Seccion inicio registrarse */
+
+.registrarse{
+	background: #3C3B3F;  
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, hsla(53.333, 23.077%, 30.588%, 45%), hsla(255, 3.2786%, 23.922%, 45%)), url(../img/registrarse.jpg);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, hsla(53.333, 23.077%, 30.588%, 45%), hsla(255, 3.2786%, 23.922%, 45%)), url(../img/registrarse.jpg);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.titulo2{
+	font-family: adventure;
+	font-size: 45px;
+	color: white;
+}
+
+.parrafo2{
+	font-family: quic;
+	color: white;
+	font-size: 35px;
+	margin: 30px 60px;
+	text-align: center;
+}
+
+.uneteya{
+	border-radius: 20px;
+	border: black;
+	border: solid 3px;
+	padding: 10px 30px;
+	font-size: 40px;
+	background-color: yellow;
+	color: black;
+}
+
+.texto-boton{
+	font-family: quic;
+}
+
+/* Seccion mapa */
+
+/* Seccion galeria */
+
+#galeria{
+	display: flex;
+	justify-content: center;
+	background-color: #BF0B80;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.galeria1{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	background-color: #BF0B80;
+}
+
+.titulo3{
+	font-family: adventure;
+	font-size: 45px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.subtitulo1{
+	background-color: #05F2DB;
+	color: black;
+	border: 0px solid;
+	font-family: quic;
+	font-size: 30px;
+	border-radius: 35px;
+	padding: 5px 30px;
+	margin-left: 70px;
+	margin-bottom: 5px;
+}
+
+.subtitulo2{
+	background-color: #BF0B80;
+	color: white;
+	border: 0px solid;
+	font-family: quic;
+	font-size: 30px;
+	border-radius: 35px;
+	padding: 5px 30px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 70px;
+}
+
+.galeria2{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	background-color: #05F2DB;
+}
+
+.galeria {
+	border: 1px solid #ccc;
+}
+.galeria:hover {
+	border: 1px solid #777;
+	transform: rotate(-3deg);
+}
+.galeria img {
+	width: 100%;
+	height: auto;
+}
+.desc {
+	background-color: white;
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	text-align: center;
+}
+.nombre1{
+	padding: 0px;
+	margin: 0px;
+	font-size: 30px;
+}
+.nombre2{
+	padding: 0px;
+	margin: 0px;
+	font-size: 20px;
+}
+.nombre3{
+	font-size: 15px;
+	display: flex;
+	flex-wrap: nowrap;
+	display: flex;
+	justify-content: center;
+}
+.nombre3 img{
+	height: 15px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+}
+.boton2-2{
+	display: flex;
+	justify-content: flex-end;
+	background-color: #BF0B80;
+}
+.boton2 {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  color:black;
+}
+
+.boton2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: red;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.boton2 span {
+  position: relative;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.boton2 svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.boton2:hover:before {
+  width: 100%;
+  background: red;
+}
+
+.boton2:hover svg {
+  transform: translateX(0);
+}
+
+.boton2:active {
+  transform: scale(0.96);
+}
+
+.videos3{
+	background-color: #05F2DB;
+	display: flex;
+	flex-direction: row;
+}
+.videostres{
+	width: 100%;
+	height: 280px;
+}
+.parrafo5{
+	background-color: white;
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	text-align: center;
+}
+.boton3-3{
+	display: flex;
+	justify-content: flex-end;
+	background-color: #05F2DB;
+	padding-top: 10px;
+}
+.boton3 {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  color:black;
+}
+
+.boton3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: red;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.boton3 span {
+  position: relative;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.boton3 svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.boton3:hover:before {
+  width: 100%;
+  background: red;
+}
+
+.boton3:hover svg {
+  transform: translateX(0);
+}
+
+.boton3:active {
+  transform: scale(0.96);
+}
+
+/* Seccion artistas */
+
+#artistas{
+	background-color: #010080;
+	width: 100%;
+	height: auto;
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+}
+.perfil{
+	width: 80%;
+}
+
+.titulo4{
+	font-size: 45px;
+	text-align: left;
+	font-family: adventure;
+	margin: 40px 70px;
+}
+.artistas-perfiles{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.artistas-perfiles p{
+	color: white;
+	text-align: center;
+	font-size: 40px;
+}
+.artistas-perfiles img{
+	width: 80%;
+	height: 80%;
+}
+
+.boton4-4{
+	display: flex;
+	justify-content: flex-end;
+	background-color: #010080;
+}
+.boton4 {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  color:white;
+}
+
+.boton4:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: yellow;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.boton4 span {
+  position: relative;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.boton4 svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.boton4:hover:before {
+  width: 100%;
+  background: yellow;
+}
+
+.boton4:hover svg {
+  transform: translateX(0);
+}
+
+.boton4:active {
+  transform: scale(0.96);
+}
+
+/* Seccion quienes somos */
+
+#quienes-somos{
+	display: flex;
+	justify-content: center;
+}
+
+.con-que-fin{
+	width: 100%;
+	height: auto;
+	padding: 0px 40px 30px 20px;
+	background-color: white;
+	border: 2px solid;
+	border-color: black;
+	margin-bottom: 40px;
+}
+
+.con-que-fin p{
+	text-align: center;
+	font-size: 30px;
+}
+
+.con-que-fin h5{
+	text-align: center;
+}
+
+.mision-vision{
+	background-color: #BF0B80;
+	display: flex;
+	flex-wrap: nowrap;
+	width: 50%;
+	padding: 40px;
+}
+.texto-vision{
+	color: white;
+	font-size: 25px;
+	text-align: center;
+}
+.equipo{
+	background-color: #010080;
+	padding: 40px;
+}
+.quienes-somos-2 h1{
+	color: #05F2DB;
+	font-size: 45px;
+	padding: 40px 0px;
+	font-family: adventure;
+	text-align: center;
+	background-color: #010080;
+}
+.equipo img{
+	width: 250px;
+	padding: 30px;
+}
+.equipo p{
+	color: white;
+	font-size: 30px;
+}
+.perfiles{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Seccion footer */
+
+#contacto{
+	background-color: black;
+	width: 100%;
+	height: auto;
+}
+
+.contacto1 img{
+	height: 40px;
+}
+
+.contacto1{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.titulo6{
+	color: white;
+	font-size: 45px;
+	font-family: adventure;
+	padding: 40px 40px;
+}
+.imagen-logo{
+	display: flex;
+	justify-content: space-around;
+}
+.imagen-logo img{
+	height: 200px;
+}
+
+.botones-redes1{
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+}
+
+.texto-siguenos{
+	color: white;
+	font-size: 30px;
+	font-family: quic;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.boton-enviar{
+	margin: 15px;
+	margin-left: 200px;
+	background-color: yellow;
+	color: black;
+	font-family: quic;
+	border-radius: 30px;
+	padding: 5px 20px;
+	border: 0px;
+}
+
+.texto-final{
+	font-size: 40px;
+	color: white;
+	text-align: center;
+	font-family: url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+}
+
+/* Seccion formulario */
+
+form{
+	width: 300px;
+	margin: 0 auto;
+	padding: 10px;
+	color: #999;
+	font-size: 25px;
+}
+form input{
+	border: 10px;
+	border-color: yellow;
+	border-radius: 70px;
+	background-color: white;
+	outline: none;
+}
+
+
+@media (max-width: 768px){
+
+	/* Seccion barra menu */
+
+	header label{
+		display: block;
+	}
+
+	.barra-nav{
+		position: absolute;
+		background-color: yellow;
+		width: 70%;
+		margin-left: -70%;
+		transition: all 0.5s;
+	}
+
+	.barra-nav{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.logo-menu{
+		height: 200px;
+		width: 350px;
+	}
+
+	.barra-nav ul{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.barra-nav li{
+		border-top: 1px solid #fff;
+	}
+
+	#barra-menu:checked ~ .barra-nav{
+		margin: 0;
+
+	}
+
+	/* Seccion inicio */
+
+	.texto-inicio{
+		margin: 20px 30px;
+	}
+
+	.beneficios-contras{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.registrarse{
+		height: 500px;
+	}
+
+	/* Seccion mapa movil*/
+
+
+	/* Seccion galeria */
+
+	#galeria{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.responsive {
+		width: 90%;
+		margin: 6px 0px;
+	}
+
+	.videos3{
+		display: flex;
+		flex-direction: column;
+		align-items: space-around;
+	}
+	.videostres{
+		margin: 20px 0px;
+	}
+
+	/* Seccion artistas */
+
+	/* Seccion quienes somos */
+
+	.mision-vision{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+}
