@@ -8,8 +8,10 @@
 	    <link rel="stylesheet" type="text/css" href="css/miestilo.css">
 	    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<title>Grafox</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
 	</head>
-	<body>
+	<body class="container-fluid">
 
 		<!------------------------
 			seccion barra menu 
@@ -21,11 +23,11 @@
 			<nav class="barra-nav">
 				<img class="logo-menu" src="img/logo-menu.png">
 				<ul>
-					<li><a href="">Inicio</a></li>
-					<li><a href="">Mapa de navegación</a></li>
-					<li><a href="">Galería</a></li>
-					<li><a href="">Artistas</a></li>
-					<li><a href="">Quines somos</a></li>
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#mapa">Mapa de navegación</a></li>
+					<li><a href="#galeria-parte">Galería</a></li>
+					<li><a href="#artistas">Artistas</a></li>
+					<li><a href="#quienes-somos">Quienes somos</a></li>
 					<li><a href="">Iniciar sesión</a></li>
 					<li><a href="">Contáctanos</a></li>
 				</ul>
@@ -91,7 +93,70 @@
 		<!------------------------
 			seccion mapa 
 		-------------------------->
+		<section class="row mapa-nav" id="mapa">
+			<div class="col-md-12">
+				<h1 class="titulo-mapa">MAPA DE NAVEGACIÓN</h1>
+			</div>
+			<div class="col-md-12">
+				<a class="boton-mapa1">Inicio</a>
+			</div>
 
+			<div class="col-md-6">
+				<div>
+					<a class="boton-mapa2">Mapa de navegación</a>
+				</div>
+				<div>
+					<a class="boton-mapa3">Vista del mapa de navegación</a>
+				</div>
+
+				<div>
+					<a class="boton-mapa2">Galería</a>
+				</div>
+				<div>
+					<a class="boton-mapa3" href="#fotos">Fotos</a>
+				</div>
+				<div>
+					<a class="boton-mapa3">Videos</a>
+				</div>
+
+				<div>
+					<a class="boton-mapa2">Iniciar sesión</a>
+				</div>
+				<div>
+					<a class="boton-mapa3">Artistas</a>
+				</div>
+				<div>
+					<a class="boton-mapa3">Clientes</a>
+				</div>
+				<div>
+					<a class="boton-mapa4">Cotizar</a>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div>
+					<a class="boton-mapa2">Quienes Somos</a>
+				<div>
+					<a class="boton-mapa3">Visión y Misión</a>
+				</div>
+				<div class="col-md-12 botones-mapa">
+					<a class="boton-mapa3">Perfiles de los Creadores</a>
+				</div>
+
+				<div class="col-md-12 botones-mapa">
+					<a class="boton-mapa2">Contáctanos</a>
+				</div>
+				<div class="col-md-12 botones-mapa">
+					<a class="boton-mapa3">Redes Sociales</a>
+				</div>
+				<div class="col-md-12 botones-mapa">
+					<a class="boton-mapa3">Link directo de Whatssap</a>
+				</div>
+				<div class="col-md-12 botones-mapa">
+					<a class="boton-mapa3">E-mail directo</a>
+				</div>
+			</div>
+		</section>
 
 		<!------------------------
 			seccion mapa movil 
@@ -100,259 +165,277 @@
 		<!------------------------
 			seccion galeria
 		-------------------------->
-		<h1 class="titulo3">Galeria</h1>
-		<div class="galeria1">
-			<button href="fotos" class="subtitulo1">Fotos</button>
-		</div>
-		<section id="galeria">
-			<div class="responsive">
-				<div class="galeria">
-					<a target="_blank" href="img/imagen1.jpg">
-						<img src="img/imagen1.jpg" alt="Texto alternativo imagen 1" width="600" height="400">
-					</a>
-					<div class="desc">
-						<p class="nombre1">Astrogigante</p>
-						<p class="nombre2">Juan Carlos</p>
-						<div class="nombre3">
-							<img src="img/calendario.svg">May/14/2021
-							<img src="img/etiquetas.svg">#BogotaGraffiti
+		<section id="galeria-parte">
+			<h1 class="col-md-12 titulo3">Galeria</h1>
+			<div class="col-md-12 galeria1">
+				<section id="fotos" class="subtitulo1">Fotos</section>
+			</div>
+			<section id="galeria">
+				<div class="responsive">
+					<div class="galeria">
+						<a target="_blank" href="img/imagen1.jpg">
+							<img src="img/imagen1.jpg" alt="Texto alternativo imagen 1" width="600" height="400">
+						</a>
+						<div class="desc">
+							<p class="nombre1">Astrogigante</p>
+							<p class="nombre2">Juan Carlos</p>
+							<div class="nombre3">
+								<img src="img/calendario.svg">May/14/2021
+								<img src="img/etiquetas.svg">#BogotaGraffiti
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="responsive">
-				<div class="galeria">
-					<a target="_blank" href="img/imagen2.jpg">
-						<img src="img/imagen2.jpg" alt="Texto alternativo imagen 2" width="600" height="400">
-					</a>
-					<div class="desc">
-						<p class="nombre1">Caras de la Sociedad</p>
-						<p class="nombre2">Sofia Hernandez</p>
-						<div class="nombre3">
-							<img src="img/calendario.svg">May/14/2021
-							<img src="img/etiquetas.svg">#ArteUrbano
+				<div class="responsive">
+					<div class="galeria">
+						<a target="_blank" href="img/imagen2.jpg">
+							<img src="img/imagen2.jpg" alt="Texto alternativo imagen 2" width="600" height="400">
+						</a>
+						<div class="desc">
+							<p class="nombre1">Caras de la Sociedad</p>
+							<p class="nombre2">Sofia Hernandez</p>
+							<div class="nombre3">
+								<img src="img/calendario.svg">May/14/2021
+								<img src="img/etiquetas.svg">#ArteUrbano
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="responsive">
-				<div class="galeria">
-					<a target="_blank" href="img/imagen3.jpg">
-						<img src="img/imagen3.jpg" alt="Texto alternativo imagen 3" width="600" height="400">
-					</a>
-					<div class="desc">
-						<p class="nombre1">El Amor</p>
-						<p class="nombre2">Tomas Cardona</p>
-						<div class="nombre3">
-							<img src="img/calendario.svg">May/14/2021
-							<img src="img/etiquetas.svg">#BogotaGraffiti
+				<div class="responsive">
+					<div class="galeria">
+						<a target="_blank" href="img/imagen3.jpg">
+							<img src="img/imagen3.jpg" alt="Texto alternativo imagen 3" width="600" height="400">
+						</a>
+						<div class="desc">
+							<p class="nombre1">El Amor</p>
+							<p class="nombre2">Tomas Cardona</p>
+							<div class="nombre3">
+								<img src="img/calendario.svg">May/14/2021
+								<img src="img/etiquetas.svg">#BogotaGraffiti
+							</div>
 						</div>
 					</div>
 				</div>
+			</section>
+
+			<section id="galeria">
+				<div class="responsive">
+					<div class="galeria">
+						<a target="_blank" href="img/imagen4.jpg">
+							<img src="img/imagen4.jpg" alt="Texto alternativo imagen 1" width="600" height="400">
+						</a>
+						<div class="desc">
+							<p class="nombre1">Dinosurealista</p>
+							<p class="nombre2">Sebas Grafo</p>
+							<div class="nombre3">
+								<img src="img/calendario.svg">May/14/2021
+								<img src="img/etiquetas.svg">#StreetArt
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="galeria">
+						<a target="_blank" href="img/imagen5.jpg">
+							<img src="img/imagen5.jpg" alt="Texto alternativo imagen 2" width="600" height="400">
+						</a>
+						<div class="desc">
+							<p class="nombre1">Arte Cotidiano</p>
+							<p class="nombre2">Saray Montaner145</p>
+							<div class="nombre3">
+								<img src="img/calendario.svg">May/14/2021
+								<img src="img/etiquetas.svg">#Citygraf
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="galeria">
+						<a target="_blank" href="img/imagen6.jpg">
+							<img src="img/imagen6.jpg" alt="Texto alternativo imagen 3" width="600" height="400">
+						</a>
+						<div class="desc">
+							<p class="nombre1">Elegrafite</p>
+							<p class="nombre2">Stanford Paints</p>
+							<div class="nombre3">
+								<img src="img/calendario.svg">May/14/2021
+								<img src="img/etiquetas.svg">#painting
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="galeria">
+				<div class="responsive">
+					<div class="galeria">
+						<a target="_blank" href="img/imagen7.jpg">
+							<img src="img/imagen7.jpg" alt="Texto alternativo imagen 1" width="600" height="400">
+						</a>
+						<div class="desc">
+							<p class="nombre1">La realidad</p>
+							<p class="nombre2">Lady & Street</p>
+							<div class="nombre3">
+								<img src="img/calendario.svg">May/14/2021
+								<img src="img/etiquetas.svg">#spraypaints
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="galeria">
+						<a target="_blank" href="img/imagen8.jpg">
+							<img src="img/imagen8.jpg" alt="Texto alternativo imagen 2" width="600" height="400">
+						</a>
+						<div class="desc">
+							<p class="nombre1">Belleza</p>
+							<p class="nombre2">Sant&Art</p>
+							<div class="nombre3">
+								<img src="img/calendario.svg">May/14/2021
+								<img src="img/etiquetas.svg">#Desing
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="galeria">
+						<a target="_blank" href="img/imagen9.jpg">
+							<img src="img/imagen9.jpg" alt="Texto alternativo imagen 3" width="600" height="400">
+						</a>
+						<div class="desc">
+							<p class="nombre1">Raices Historicas</p>
+							<p class="nombre2">Micky Noha</p>
+							<div class="nombre3">
+								<img src="img/calendario.svg">May/14/2021
+								<img src="img/etiquetas.svg">#UrbanArt
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="col-md-12 boton2-2">
+				<a href="#" class="boton2">
+					<span>Ver más</span>
+					<svg width="13px" height="10px" viewBox="0 0 13 10">
+						<path d="M1,5 L11,5"></path>
+						<polyline points="8 1 12 5 8 9"></polyline>
+					</svg>
+				</a>
 			</div>
+
+			<section id="galeria-video">
+				<h4 class="subtitulo-video">Videos</h4>
+				<div class="row videos-galeria">
+					<div class="col-md-1"></div>
+					<div class="col-md-3 video-1">
+						<iframe  src="https://www.youtube.com/embed/pz-0-EJ3dHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="pie-video">
+							<p class="nombre1">Graffti Tools</p>
+							<p class="nombre2">Juan Carlos</p>
+							<p class="nombre3">
+								<img src="img/calendario.svg">May/14/2021
+								<img src="img/etiquetas.svg">#UrbanArt
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-3 video-1">
+						<iframe  src="https://www.youtube.com/embed/pz-0-EJ3dHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="pie-video">
+							<p class="nombre1">Graffti Tools</p>
+							<p class="nombre2">Juan Carlos</p>
+							<p class="nombre3">
+								<img src="img/calendario.svg">May/14/2021
+								<img src="img/etiquetas.svg">#UrbanArt
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-3 video-1">
+						<iframe  src="https://www.youtube.com/embed/pz-0-EJ3dHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="pie-video">
+							<p class="nombre1">Graffti Tools</p>
+							<p class="nombre2">Juan Carlos</p>
+							<p class="nombre3">
+								<img src="img/calendario.svg">May/14/2021
+								<img src="img/etiquetas.svg">#UrbanArt
+							</p>
+						</div>
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+			</section>
 		</section>
-
-		<section id="galeria">
-			<div class="responsive">
-				<div class="galeria">
-					<a target="_blank" href="img/imagen4.jpg">
-						<img src="img/imagen4.jpg" alt="Texto alternativo imagen 1" width="600" height="400">
-					</a>
-					<div class="desc">
-						<p class="nombre1">Dinosurealista</p>
-						<p class="nombre2">Sebas Grafo</p>
-						<div class="nombre3">
-							<img src="img/calendario.svg">May/14/2021
-							<img src="img/etiquetas.svg">#StreetArt
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="responsive">
-				<div class="galeria">
-					<a target="_blank" href="img/imagen5.jpg">
-						<img src="img/imagen5.jpg" alt="Texto alternativo imagen 2" width="600" height="400">
-					</a>
-					<div class="desc">
-						<p class="nombre1">Arte Cotidiano</p>
-						<p class="nombre2">Saray Montaner145</p>
-						<div class="nombre3">
-							<img src="img/calendario.svg">May/14/2021
-							<img src="img/etiquetas.svg">#Citygraf
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="responsive">
-				<div class="galeria">
-					<a target="_blank" href="img/imagen6.jpg">
-						<img src="img/imagen6.jpg" alt="Texto alternativo imagen 3" width="600" height="400">
-					</a>
-					<div class="desc">
-						<p class="nombre1">Elegrafite</p>
-						<p class="nombre2">Stanford Paints</p>
-						<div class="nombre3">
-							<img src="img/calendario.svg">May/14/2021
-							<img src="img/etiquetas.svg">#painting
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="galeria">
-			<div class="responsive">
-				<div class="galeria">
-					<a target="_blank" href="img/imagen7.jpg">
-						<img src="img/imagen7.jpg" alt="Texto alternativo imagen 1" width="600" height="400">
-					</a>
-					<div class="desc">
-						<p class="nombre1">La realidad</p>
-						<p class="nombre2">Lady & Street</p>
-						<div class="nombre3">
-							<img src="img/calendario.svg">May/14/2021
-							<img src="img/etiquetas.svg">#spraypaints
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="responsive">
-				<div class="galeria">
-					<a target="_blank" href="img/imagen8.jpg">
-						<img src="img/imagen8.jpg" alt="Texto alternativo imagen 2" width="600" height="400">
-					</a>
-					<div class="desc">
-						<p class="nombre1">Belleza</p>
-						<p class="nombre2">Sant&Art</p>
-						<div class="nombre3">
-							<img src="img/calendario.svg">May/14/2021
-							<img src="img/etiquetas.svg">#Desing
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="responsive">
-				<div class="galeria">
-					<a target="_blank" href="img/imagen9.jpg">
-						<img src="img/imagen9.jpg" alt="Texto alternativo imagen 3" width="600" height="400">
-					</a>
-					<div class="desc">
-						<p class="nombre1">Raices Historicas</p>
-						<p class="nombre2">Micky Noha</p>
-						<div class="nombre3">
-							<img src="img/calendario.svg">May/14/2021
-							<img src="img/etiquetas.svg">#UrbanArt
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<div class="boton2-2">
-			<a href="#" class="boton2">
-				<span>Ver más</span>
-				<svg width="13px" height="10px" viewBox="0 0 13 10">
-					<path d="M1,5 L11,5"></path>
-					<polyline points="8 1 12 5 8 9"></polyline>
-				</svg>
-			</a>
-		</div>
-
-		<div class="galeria2">
-			<button href="videos" class="subtitulo2">VIdeo</button>
-		</div>
-		<div class="row">
-			<div class="col-md-12 videos3">
-				<div class="col-md-4 galeria-parte-video">
-					<iframe class="videostres" src="https://www.youtube.com/embed/dGzpsBSJZow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<div class="parrafo5">
-						<p class="nombre1">Arte Cotidiano</p>
-						<p class="nombre2">Saray Montaner145</p>
-						<div class="nombre3">
-							<img src="img/calendario.svg">May/14/2021
-							<img src="img/etiquetas.svg">#Citygraf
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 galeria-parte-video">
-					<iframe class="videostres" src="https://www.youtube.com/embed/dGzpsBSJZow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<div class="parrafo5">
-						<p class="nombre1">Arte Cotidiano</p>
-						<p class="nombre2">Saray Montaner145</p>
-						<div class="nombre3">
-							<img src="img/calendario.svg">May/14/2021
-							<img src="img/etiquetas.svg">#Citygraf
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 galeria-parte-video">
-					<iframe class="videostres" src="https://www.youtube.com/embed/dGzpsBSJZow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<div class="parrafo5">
-						<p class="nombre1">Arte Cotidiano</p>
-						<p class="nombre2">Saray Montaner145</p>
-						<div class="nombre3">
-							<img src="img/calendario.svg">May/14/2021
-							<img src="img/etiquetas.svg">#Citygraf
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="boton3-3">
-			<a href="#" class="boton3">
-				<span>Ver más</span>
-				<svg width="13px" height="10px" viewBox="0 0 13 10">
-					<path d="M1,5 L11,5"></path>
-					<polyline points="8 1 12 5 8 9"></polyline>
-				</svg>
-			</a>
-		</div>
+		
 
 		<!------------------------
 			seccion artistas
 		-------------------------->
 		<h5 class="titulo4">Artistas</h5>
-		<section id="artistas">
-			<div class="row perfil">
-				<div class="col-md-4 artistas-perfiles">
-					<img src="img/perfil1.svg">
-					<p>Camila Goméz</p>
+		<section id="artistas" class="row">
+			<div class="col-md-12 perfil">
+				<div class="artistas-perfiles">
+					<button class="botones-artistas">
+						<img src="img/perfil1.svg">
+						<p>Camila Goméz</p>
+					</button>
 				</div>
-				<div class="col-md-4 artistas-perfiles">
-					<img src="img/perfil2.svg">
-					<p>Esteban Garcia</p>
+				<div class="artistas-perfiles">
+					<button class="botones-artistas">
+						<img src="img/perfil2.svg">
+						<p>Esteban Garcia</p>
+					</button>
 				</div>
-				<div class="col-md-4 artistas-perfiles">
-					<img src="img/perfil3.svg">
-					<p>Daniel Calderónz</p>
+				<div class="artistas-perfiles">
+					<button class="botones-artistas">
+						<img src="img/perfil3.svg">
+						<p>Daniel Calderónz</p>
+					</button>
 				</div>
-				<div class="col-md-4 artistas-perfiles">
-					<img src="img/perfil4.svg">
-					<p>Carlos Sánchez</p>
+			</div>
+			<div class="col-md-12 perfil">
+				<div class="artistas-perfiles">
+					<button class="botones-artistas">
+						<img src="img/perfil4.svg">
+						<p>Carlos Sánchez</p>
+					</button>
 				</div>
-				<div class="col-md-4 artistas-perfiles">
-					<img src="img/perfil5.svg">
-					<p>Oscar Perez</p>
+				<div class="artistas-perfiles">
+					<button class="botones-artistas">
+						<img src="img/perfil5.svg">
+						<p>Oscar Perez</p>
+					</button>
 				</div>
-				<div class="col-md-4 artistas-perfiles">
-					<img src="img/perfil6.svg">
-					<p>Ana Hernadez</p>
+				<div class="artistas-perfiles">
+					<button class="botones-artistas">
+						<img src="img/perfil6.svg">
+						<p>Ana Hernadez</p>
+					</button>
 				</div>
-				<div class="col-md-4 artistas-perfiles">
-					<img src="img/perfil7.svg">
-					<p>Carla Ospina</p>
+			</div>
+			<div class="col-md-12 perfil">
+				<div class="artistas-perfiles">
+					<button class="botones-artistas">
+						<img src="img/perfil7.svg">
+						<p>Carla Ospina</p>
+					</button>
 				</div>
-				<div class="col-md-4 artistas-perfiles">
-					<img src="img/perfil8.svg">
-					<p>Paulina Torrez</p>
+				<div class="artistas-perfiles">
+					<button class="botones-artistas">
+						<img src="img/perfil8.svg">
+						<p>Paulina Torrez</p>
+					</button>
 				</div>
-				<div class="col-md-4 artistas-perfiles">
-					<img src="img/perfil9.svg">
-					<p>Andres Giraldo</p>
+				<div class="artistas-perfiles">
+					<button class="botones-artistas">
+						<img src="img/perfil9.svg">
+						<p>Andres Giraldo</p>
+					</button>
 				</div>
 			</div>
 		</section>
-		<div class="boton4-4">
+		<div class="col-md-12 boton4-4">
 			<a href="#" class="boton4">
 				<span>Ver más</span>
 				<svg width="13px" height="10px" viewBox="0 0 13 10">
@@ -366,7 +449,7 @@
 			seccion quienes somos
 		-------------------------->
 
-		<h5 class="titulo4">QUIeNES SOMOS</h5>
+		<h5 class="titulo4">QUIENES SOMOS</h5>
 		<section id="quienes-somos" class="row">
 			<div class="col-md-8 con-que-fin">
 				<h5 class="titulo4">CON QUE FIN</h5>
