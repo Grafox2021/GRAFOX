@@ -10,6 +10,7 @@
 		<title>Grafox</title>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+		<link rel="icon" href="img/logo-fav.png">
 	</head>
 	<body class="container-fluid">
 
@@ -40,7 +41,7 @@
 		<section id="inicio">
 			<div class="row">
 				<div class="col-md-6 video">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/oFKu8wm7RcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/77zG0KVEF-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				<div class="col-md-5 texto-inicio">
 					<img src="img/titulo1.svg">
@@ -48,18 +49,31 @@
 						<p class="textografox2">Grafox es un proyecto que tiene por objetivo apoyar el arte urbano, centrándose en el área del grafiti.</p>
 						<p class="textografox2">Llegando así a prestar un servicio en el cual aquellos artistas que han dedicado su vida a este arte puedan ser reconocidos y aceptados por tal pasión, dejando atrás aquellas estigmas y estereotipos en los cuales el grafiti es mal visto e incluso considerado vandalismo y se ha llegado a tomar no como una forma de expresión sino como un acto o acción de mal gusto.</p>
 					</div>
-					<a href="#" class="boton1">
+					<a href="#" class="boton1" onclick="vermas('mas')('chao');" id="mas">
 						<span>Ver más</span>
 						<svg width="13px" height="10px" viewBox="0 0 13 10">
 						    <path d="M1,5 L11,5"></path>
 						    <polyline points="8 1 12 5 8 9"></polyline>
 						</svg>
 					</a>
+
+					<p class="textografox3" id="desplegar" style="display:none;">
+						Por eso mismo Grafox quiere cambiar la manera en que son vistos los artistas y su grafiti, permitiendo que los artistas tengan un espacio en el cual darse a conocer junto con su portafolio, espacio que se les otorgara por medio de nuestra pagina web, con el fin de que ellos creen su propia cuenta y expongan con este el portafolio anteriormente mencionado, con el fin de que personas que estén interesadas en el tema o quieran conocer mas sobre el grafiti y como es la elaboración de estos proyectos y por su parte, también quieran conocer a los artistas y así adquirir sus servicios.	
+
+						<a href="#" class="boton1" onclick="vermas('menos')('chao');" id="menos">
+							<span>Ver menos</span>
+							<svg width="13px" height="10px" viewBox="0 0 13 10">
+							    <path d="M1,5 L11,5"></path>
+							    <polyline points="8 1 12 5 8 9"></polyline>
+							</svg>
+						</a>
+					</p>
 				</div>
 			</div>
 
 			<div class="col-md-12 slogan">
-				<h1>RAYANDO MENTES</h1>
+				<h1 class="rojo">RAYANDO</h1>
+				<h1 class="azul">MENTES</h1>
 			</div>
 
 			<div class="b-c">
@@ -68,15 +82,15 @@
 						<p class="titulo">BENEFICIOS
 							<img src="img/lata.png" height="75px" class="lata">
 						</p>
-						<p class="parrafo1">Los artistas que deseen registrarse, podránexpandir su arte de la manera más sencilla, ya que otros usuarios accederán y verán sus trabajos, pasando así a ser sus clientes. </p>
+						<p class="parrafo1">Los artistas que deseen registrarse, podrán expandir su arte de la manera más sencilla, ya que otros usuarios accederán y verán sus trabajos, pasando así a ser sus clientes. </p>
 						<p class="parrafo1">Adicional podrán ofrecer sus servicios a las personas que lo requieran, teniendo la posibilidad de contactarlos.</p>
 					</div>
 					<div class="col-md-5">
 						<p class="titulo">CONTRAS
 							<img src="img/pintura.png" height="70px" class="lata">
 						</p>
-						<p class="parrafo1">Los artistas que deseen registrarse, podránexpandir su arte de la manera más sencilla, ya que otros usuarios accederán y verán sus trabajos, pasando así a ser sus clientes. </p>
-						<p class="parrafo1">Adicional podrán ofrecer sus servicios a las personas que lo requieran, teniendo la posibilidad de contactarlos.</p>
+						<p class="parrafo1">- Es un sitio web dinámico, en el que las personas se les facilitara la navegación, sin la necesidad de ir a un lugar a otro. </p>
+						<p class="parrafo1">- La información del artista se encuentra visible en sus perfiles, teniendo un rápida y confiable comunicación.</p>
 					</div>
 				</div>
 			</div>
@@ -84,9 +98,9 @@
 			<div class="col-md-12 registrarse">
 				<h1 class="titulo2">Registrate Gratis</h1>
 				<p class="parrafo2">Si eres un artista y deseas que más personas miren tu trabajo, te invitamos a unirte a nuestra comunidad.</p>
-				<button class="uneteya">
+				<a class="uneteya" href="https://grafox2021.github.io/registrarse/">
 					<h1 class="texto-boton">UNETE YA!</h1>
-				</button>
+				</a>
 			</div>
 		</section>
 
@@ -329,7 +343,7 @@
 					<div class="row videos-galeria">
 						<div class="col-md-1"></div>
 						<div class="col-md-3 video-1">
-							<iframe  src="https://www.youtube.com/embed/pz-0-EJ3dHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="auto" height="auto" src="https://www.youtube.com/embed/oOt38osOX7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							<div class="pie-video">
 								<p class="nombre1">Graffti Tools</p>
 								<p class="nombre2">Juan Carlos</p>
@@ -341,7 +355,7 @@
 						</div>
 
 						<div class="col-md-3 video-1">
-							<iframe  src="https://www.youtube.com/embed/pz-0-EJ3dHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="auto" height="auto" src="https://www.youtube.com/embed/ilqEoFk3mds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							<div class="pie-video">
 								<p class="nombre1">Graffti Tools</p>
 								<p class="nombre2">Juan Carlos</p>
@@ -353,7 +367,7 @@
 						</div>
 
 						<div class="col-md-3 video-1">
-							<iframe  src="https://www.youtube.com/embed/pz-0-EJ3dHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="auto" height="auto" src="https://www.youtube.com/embed/acWbOyNXLUc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							<div class="pie-video">
 								<p class="nombre1">Graffti Tools</p>
 								<p class="nombre2">Juan Carlos</p>
@@ -386,62 +400,80 @@
 		<section id="artistas" class="row">
 			<div class="col-md-12 perfil">
 				<div class="artistas-perfiles">
-					<button class="botones-artistas">
-						<img src="img/perfil1.png">
-						<p>Camila Goméz</p>
-					</button>
+					<a href="https://grafox2021.github.io/perfil/">
+						<button class="botones-artistas">
+							<img src="img/perfil1.png">
+							<p>Camila Goméz</p>
+						</button>
+					</a>
 				</div>
 				<div class="artistas-perfiles">
-					<button class="botones-artistas">
-						<img src="img/perfil2.png">
-						<p>Esteban Garcia</p>
-					</button>
+					<a href="https://grafox2021.github.io/perfil/">
+						<button class="botones-artistas">
+							<img src="img/perfil2.png">
+							<p>Esteban Garcia</p>
+						</button>
+					</a>
 				</div>
 				<div class="artistas-perfiles">
-					<button class="botones-artistas">
-						<img src="img/perfil3.png">
-						<p>Daniel Calderónz</p>
-					</button>
-				</div>
-			</div>
-			<div class="col-md-12 perfil">
-				<div class="artistas-perfiles">
-					<button class="botones-artistas">
-						<img src="img/perfil4.png">
-						<p>Carlos Sánchez</p>
-					</button>
-				</div>
-				<div class="artistas-perfiles">
-					<button class="botones-artistas">
-						<img src="img/perfil5.png">
-						<p>Oscar Perez</p>
-					</button>
-				</div>
-				<div class="artistas-perfiles">
-					<button class="botones-artistas">
-						<img src="img/perfil6.png">
-						<p>Ana Hernadez</p>
-					</button>
+					<a href="https://grafox2021.github.io/perfil/">
+						<button class="botones-artistas">
+							<img src="img/perfil3.png">
+							<p>Daniel Calderónz</p>
+						</button>
+					</a>
 				</div>
 			</div>
 			<div class="col-md-12 perfil">
 				<div class="artistas-perfiles">
-					<button class="botones-artistas">
-						<img src="img/perfil7.png">
-						<p>Carla Ospina</p>
-					</button>
+					<a href="https://grafox2021.github.io/perfil/">
+						<button class="botones-artistas">
+							<img src="img/perfil4.png">
+							<p>Carlos Sánchez</p>
+						</button>
+					</a>
 				</div>
 				<div class="artistas-perfiles">
-					<button class="botones-artistas">
-						<img src="img/perfil8.png">
-						<p>Paulina Torrez</p>
-					</button>
+					<a href="https://grafox2021.github.io/perfil/">
+						<button class="botones-artistas">
+							<img src="img/perfil5.png">
+							<p>Oscar Perez</p>
+						</button>
+					</a>
 				</div>
 				<div class="artistas-perfiles">
-					<button class="botones-artistas">
-						<img src="img/perfil9.png">
-						<p>Andres Giraldo</p>
-					</button>
+					<a href="https://grafox2021.github.io/perfil/">
+						<button class="botones-artistas">
+							<img src="img/perfil6.png">
+							<p>Ana Hernadez</p>
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-12 perfil">
+				<div class="artistas-perfiles">
+					<a href="https://grafox2021.github.io/perfil/">
+						<button class="botones-artistas">
+							<img src="img/perfil7.png">
+							<p>Carla Ospina</p>
+						</button>
+					</a>
+				</div>
+				<div class="artistas-perfiles">
+					<a href="https://grafox2021.github.io/perfil/">
+						<button class="botones-artistas">
+							<img src="img/perfil8.png">
+							<p>Paulina Torrez</p>
+						</button>
+					</a>
+				</div>
+				<div class="artistas-perfiles">
+					<a href="https://grafox2021.github.io/perfil/">
+						<button class="botones-artistas">
+							<img src="img/perfil9.png">
+							<p>Andres Giraldo</p>
+						</button>
+					</a>
 				</div>
 			</div>
 		</section>
@@ -480,29 +512,29 @@
 			<h1 class="titulo-equipo">EQUIPO DE TRABAJO</h1>
 			<div class="row equipo">
 				<div class="col-md-3 perfiles">
-					<img src="img/equipo1.svg">
-					<p>Tania Gonzales</p>
+					<img src="img/foto-tania.png">
+					<p>Tania Gonzalez</p>
 				</div>
 				<div class="col-md-3 perfiles">
-					<img src="img/equipo1.svg">
+					<img src="img/foto-heidy.png">
 					<p>Heidy Cely</p>
 				</div>
 				<div class="col-md-3 perfiles">
-					<img src="img/equipo1.svg">
+					<img src="img/foto-miguel.png">
 					<p>Miguel Trujillo</p>
 				</div>
 			</div>
 			<div class="row equipo">
 				<div class="col-md-3 perfiles">
-					<img src="img/equipo1.svg">
+					<img src="img/foto-julieth.png">
 					<p>Julieth Triviño</p>
 				</div>
 				<div class="col-md-3 perfiles">
-					<img src="img/equipo1.svg">
+					<img src="img/foto-paula1.png">
 					<p>Paula Quintana</p>
 				</div>
 				<div class="col-md-3 perfiles">
-					<img src="img/equipo1.svg">
+					<img src="img/foto-kevin.png">
 					<p>Kevin Zambrano</p>
 				</div>
 			</div>
@@ -526,13 +558,13 @@
 				</div>
 				<div class="col-md-3 botones-redes">
 					<div class="botones-redes1">
-						<a class="imagenes-botones" href="https://www.instagram.com/">
+						<a class="imagenes-botones" href="https://instagram.com/grafox2021?utm_medium=copy_link">
 							<img src="img/instagram.svg">
 						</a>
-						<a class="imagenes-botones" href="https://twitter.com/?lang=es">
+						<a class="imagenes-botones" href="https://mobile.twitter.com/Grafox5">
 							<img src="img/twiter.svg">
 						</a>
-						<a class="imagenes-botones" href="https://www.facebook.com/">
+						<a class="imagenes-botones" href="https://www.facebook.com/Grafox-100736195613995/">
 							<img src="img/facebook.svg">
 						</a>
 						<a class="imagenes-botones" href="https://postcron.com/es/blog/landings/generador-de-enlaces-para-whatsapp/">
@@ -560,5 +592,7 @@
 				</p>
 			</div>
 		</footer>
+
+		<script src="js/vermas.js"></script>
 	</body>
 </html>

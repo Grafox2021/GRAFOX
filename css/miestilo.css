@@ -96,6 +96,7 @@ header label:hover {
 .texto-inicio img{
 	height: 100px;
 	padding: 30px 0px;
+	margin-top: 10px;
 }
 
 .texto-inicio{
@@ -107,6 +108,8 @@ header label:hover {
 	text-align: justify;
 	background-color: white;
 	border: solid 1px;
+	font-size: 13px;
+	clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
 
 .boton1 {
@@ -123,17 +126,17 @@ header label:hover {
   top: 0;
   left: 0;
   display: block;
-  border-radius: 28px;
+  border-radius: 20px;
   background: rgba(255, 171, 157, 0.5);
-  width: 45px;
-  height: 45px;
+  width: 38px;
+  height: 38px;
   transition: all 0.3s ease;
 }
 
 .boton1 span {
   position: relative;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 5px;
   font-weight: 900;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -172,6 +175,13 @@ header label:hover {
 	justify-content: center;
 	margin: 40px 0px;
 }
+.rojo{
+	color: red;
+	margin-right: 20px;
+}
+.azul{
+	color: #010080;
+}
 
 .b-c{
 	display: flex;
@@ -199,7 +209,7 @@ header label:hover {
 
 .parrafo1{
 	color: white;
-	font-size: 15px;
+	font-size: 17px;
 	font-family: 'Quicksand', sans-serif;
 	text-align: justify;
 }
@@ -502,6 +512,9 @@ header label:hover {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+}
+.video-1 iframe{
+	
 }
 
 .video-1:hover{
@@ -843,6 +856,7 @@ header label:hover {
 	border-color: #C8C8C8;
 	font-size: 18px;
 	margin-left: 30px;
+	color: white;
 }
 
 
